@@ -14,7 +14,7 @@ class Owner
   end
   
   def self.cats
-    @@all.map
+    @@all.filter
   end
   
   def self.all

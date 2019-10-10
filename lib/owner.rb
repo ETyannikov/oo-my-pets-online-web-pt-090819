@@ -20,6 +20,10 @@ class Owner
     @pets.filter {|i| i.species == "cat"}
   end
   
+  def dogs
+    @pets.filter {|i| i.species == "dog"}
+  end
+  
   def self.all
     @@all
   end

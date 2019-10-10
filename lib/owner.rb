@@ -1,13 +1,15 @@
 class Owner
+  attr_accessor :pets
   attr_reader :name, :species
  
   @@all = []
-  @@pets = []
+
  
   def initialize(name)
     @name = name
     @species = "human"
     @@all << self
+    @pets = []
   end
   
   def say_species
@@ -15,16 +17,13 @@ class Owner
   end
   
   def cats
-    @@pets.filter {|i| i.species == "cat"}
+    @pets.filter {|i| i.species == "cat"}
   end
   
   def self.all
     @@all
   end
   
-  def pets
-    @@pets
-  end
   
   def self.count
     @@all.count

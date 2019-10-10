@@ -13,7 +13,7 @@ class Owner
     "I am a human."
   end
   
-  def self.cats
+  def cats
     @@all.filter {|i| i.species == "cat"}
   end
   

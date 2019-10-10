@@ -8,6 +8,7 @@ class Cat
     @species = "cat"
     @name = name
     @owner = owner
+    owner.pets
     @mood = "nervous"
     @@all << self
   end

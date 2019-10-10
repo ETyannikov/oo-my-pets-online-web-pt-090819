@@ -13,6 +13,8 @@ class Owner
     "I am a human."
   end
   
+  def cats
+  
   def self.all
     @@all
   end

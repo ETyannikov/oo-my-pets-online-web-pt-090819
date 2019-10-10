@@ -22,7 +22,7 @@ class Owner
     @@all
   end
   
-  def self.pets
+  def pets
     @@pets
   end
   

@@ -15,11 +15,15 @@ class Owner
   end
   
   def cats
-    @@all
+    @@pets.filter {|i| i.species == "cat"}
   end
   
   def self.all
     @@all
+  end
+  
+  def self.pets
+    @@pets
   end
   
   def self.count

@@ -14,7 +14,7 @@ class Owner
   end
   
   def cats
-    self.all.filter {|i| i.species == "cat"}
+    @@all.filter {|i| i.species == "cat"}
   end
   
   def self.all

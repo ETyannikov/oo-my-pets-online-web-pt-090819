@@ -14,7 +14,7 @@ class Owner
   end
   
   def self.cats
-    @@all.filter
+    @@all.filter {|i| i.
   end
   
   def self.all

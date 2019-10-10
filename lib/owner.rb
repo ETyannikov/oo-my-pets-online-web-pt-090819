@@ -13,7 +13,9 @@ class Owner
     "I am a human."
   end
   
-  def cats
+  def self.cats
+    @@all.map
+  end
   
   def self.all
     @@all
